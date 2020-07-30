@@ -16,30 +16,60 @@
   margin: 20px;
   padding: 20px;
 }
+.inner-inner-main{
+  padding-top: 10px;
+}
+.cats{
+  padding-left: 50px;
+}
+.cat-img{
+  margin-right: 10px;
+  margin-left: 10px;
+}
   </style>
+
+<style>
+  h4{
+      background: ;
+  }
+  h4.highlight{
+      background: yellow;
+  }
+</style>
 </head>
 <body>
   <div class ="col-lg-4 col-lg-offset-4 main">
    
     <div class="col-lg-12 inner-main">
       <h3 style =text-align:center;>What can we help you with Today, George Mogaka!</h3>
-      <div class="col-lg-6">
-        <img src="imgs/mpesa.png" height="50%" width="50%">
-        <h4>Learn M-PESA</h4>
-      </div>
-      <div class="col-lg-6">
-        <img src="imgs/data.png" height="50%" width="50%">
-        <h4>Learn DATA</h4>
-      </div>
-      <div class="col-lg-6">
-        <img src="imgs/calls.jpg" height="50%" width="50%">
-        <h4>Learn CALLS</h4>
-      </div>
-      <div class="col-lg-6">
-        <img src="imgs/sms.png" height="50%" width="50%">
-        <h4>Learn SMS</h4>
+       <div class=" inner-inner-main">
+        <div class="col-lg-6 cats">
+          <img src="imgs/mpesa.png" class="cat-img img-responsive" height="50%" width="50%">
+          <h4>Learn M-PESA</h4>
+        </div>
+        <div class="col-lg-6 cats">
+          <img src="imgs/data.png" class="cat-img img-responsive" height="50%" width="50%">
+          <h4>Learn DATA</h4>
+        </div>
+        <div class="col-lg-6 cats">
+          <img src="imgs/calls.jpg" class="cat-img img-responsive" height="50%" width="50%">
+          <h4>Learn CALLS</h4>
+        </div>
+        <div class="col-lg-6 cats">
+          <img src="imgs/sms.png" class="cat-img img-responsive" height="50%" width="50%">
+          <h4>Learn SMS</h4>
+        </div>
       </div>
     </div>
   </div>
+  <script>
+    $(document).ready(function(){
+        $("h4").hover(function(){
+            $(this).addClass("highlight");
+        }, function(){
+            $(this).removeClass("highlight");
+        });
+    });
+    </script>
 </body>
 </html>

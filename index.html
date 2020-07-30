@@ -9,14 +9,21 @@
   <style>
 .main {
   padding-top: 100px;
-  
 }
 .inner-main{
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
   background-color: aliceblue;
   margin: 20px;
   padding: 20px;
+  -webkit-box-shadow: 11px 10px 59px -32px rgba(0,0,0,0.68);
+  -moz-box-shadow: 11px 10px 59px -32px rgba(0,0,0,0.68);
+  box-shadow: 11px 10px 59px -32px rgba(0,0,0,0.68);
 }
 .inner-inner-main{
+  cursor: pointer;
+  margin: 15px 0;
   padding-top: 10px;
 }
 .cats{
@@ -29,11 +36,11 @@
   </style>
 
 <style>
-  h4{
+  .cats{
       background: ;
   }
-  h4.highlight{
-      background: yellow;
+  .cats.highlight{
+      background: rgb(250, 250, 250);
   }
 </style>
 </head>
@@ -64,7 +71,7 @@
   </div>
   <script>
     $(document).ready(function(){
-        $("h4").hover(function(){
+        $(".cats").hover(function(){
             $(this).addClass("highlight");
         }, function(){
             $(this).removeClass("highlight");
